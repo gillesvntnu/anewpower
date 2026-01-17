@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://anewpower.be/sitemap.xml

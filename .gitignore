@@ -1,0 +1,11 @@
+node_modules
+
+public/images/
+
+public/videos/
+
+build/
+
+.idea/
+
+package-lock.json
