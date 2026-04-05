@@ -3,6 +3,7 @@ import { HashRouter, Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import "./App.css";
 import Home from "./components/pages/Home";
+import Contact from "./components/pages/Contact";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function ScrollToTop(): null {
@@ -22,6 +23,7 @@ function App(): JSX.Element {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </HashRouter>
   );
