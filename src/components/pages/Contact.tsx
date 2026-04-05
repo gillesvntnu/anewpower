@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import "../../App.css";
 
 function Contact(): JSX.Element {
@@ -31,7 +31,7 @@ function Contact(): JSX.Element {
               </div>
               <h3>Bel ons</h3>
               <p>
-                <a href="tel:+32XXXXXXXXX">+32 XXX XX XX XX</a>
+                <a href="tel:+32477214333">+32 477 21 43 33</a>
               </p>
               <p className="contact-detail">Ma - Vr: 8:00 - 18:00</p>
             </div>
@@ -80,9 +80,9 @@ function Contact(): JSX.Element {
           <div className="footer-col">
             <h4>Diensten</h4>
             <ul>
-              <li>Zonnepanelen</li>
-              <li>Batterijen &amp; Omvormers</li>
-              <li>Laadpalen</li>
+              <li><Link to="/zonnepanelen">Zonnepanelen</Link></li>
+              <li><Link to="/thuisbatterijen">Thuisbatterijen</Link></li>
+              <li><Link to="/laadpalen">Laadpalen</Link></li>
             </ul>
           </div>
           <div className="footer-col">
@@ -92,7 +92,7 @@ function Contact(): JSX.Element {
                 <i className="fas fa-envelope"></i> info@anewpower.be
               </li>
               <li>
-                <i className="fas fa-phone"></i> +32 XXX XX XX XX
+                <i className="fas fa-phone"></i> +32 477 21 43 33
               </li>
             </ul>
           </div>

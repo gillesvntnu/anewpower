@@ -45,13 +45,18 @@ function Navbar(): JSX.Element {
               Home
             </Link>
           </li>
-          <li className="nav-item">
+          <li className="nav-item dropdown">
             <span
               className="nav-links"
               onClick={() => handleNavClick("diensten")}
             >
-              Diensten
+              Diensten <i className="fas fa-chevron-down fa-xs"></i>
             </span>
+            <div className="dropdown-content">
+              <Link to="/zonnepanelen" onClick={closeMobileMenu}>Zonnepanelen</Link>
+              <Link to="/thuisbatterijen" onClick={closeMobileMenu}>Thuisbatterijen</Link>
+              <Link to="/laadpalen" onClick={closeMobileMenu}>Laadpalen</Link>
+            </div>
           </li>
           <li className="nav-item">
             <span

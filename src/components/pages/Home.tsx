@@ -58,7 +58,7 @@ function Home(): JSX.Element {
             Van advies tot installatie en onderhoud — wij bieden een totaaloplossing voor uw energiebehoeften.
           </p>
           <div className="diensten-grid">
-            <div className="dienst-card">
+            <Link to="/zonnepanelen" className="dienst-card">
               <div className="dienst-icon">
                 <i className="fas fa-solar-panel"></i>
               </div>
@@ -68,8 +68,9 @@ function Home(): JSX.Element {
                 <strong>Jinko Solar</strong> en <strong>Aiko</strong>. Optimaal rendement voor
                 elk type dak.
               </p>
-            </div>
-            <div className="dienst-card">
+              <span className="dienst-link">Meer info &rarr;</span>
+            </Link>
+            <Link to="/thuisbatterijen" className="dienst-card">
               <div className="dienst-icon">
                 <i className="fas fa-battery-full"></i>
               </div>
@@ -78,8 +79,9 @@ function Home(): JSX.Element {
                 Sla uw zonne-energie op met betrouwbare <strong>Growatt</strong> batterijsystemen
                 en omvormers. Gebruik uw eigen energie, ook 's nachts.
               </p>
-            </div>
-            <div className="dienst-card">
+              <span className="dienst-link">Meer info &rarr;</span>
+            </Link>
+            <Link to="/laadpalen" className="dienst-card">
               <div className="dienst-icon">
                 <i className="fas fa-charging-station"></i>
               </div>
@@ -88,7 +90,8 @@ function Home(): JSX.Element {
                 Rij elektrisch met een slimme <strong>Alfen</strong> laadpaal. Thuis of op het
                 werk, wij installeren uw laadoplossing vakkundig.
               </p>
-            </div>
+              <span className="dienst-link">Meer info &rarr;</span>
+            </Link>
           </div>
         </div>
       </section>
@@ -185,9 +188,9 @@ function Home(): JSX.Element {
           <div className="footer-col">
             <h4>Diensten</h4>
             <ul>
-              <li>Zonnepanelen</li>
-              <li>Batterijen &amp; Omvormers</li>
-              <li>Laadpalen</li>
+              <li><Link to="/zonnepanelen">Zonnepanelen</Link></li>
+              <li><Link to="/thuisbatterijen">Thuisbatterijen</Link></li>
+              <li><Link to="/laadpalen">Laadpalen</Link></li>
             </ul>
           </div>
           <div className="footer-col">
@@ -197,7 +200,7 @@ function Home(): JSX.Element {
                 <i className="fas fa-envelope"></i> info@anewpower.be
               </li>
               <li>
-                <i className="fas fa-phone"></i> +32 XXX XX XX XX
+                <i className="fas fa-phone"></i> +32 477 21 43 33
               </li>
             </ul>
           </div>
