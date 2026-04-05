@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 import { scrollToSection } from "./pages/Home";
+import logo from "../images/logo-white.png";
 
 function Navbar(): JSX.Element {
   const [click, setClick] = useState<boolean>(false);
@@ -33,10 +34,7 @@ function Navbar(): JSX.Element {
     <nav className={`navbar ${scrolled ? "navbar-scrolled" : ""}`}>
       <div className="navbar-container">
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-          <span className="logo-icon">
-            <i className="fas fa-bolt"></i>
-          </span>
-          ANewPower
+          <img src={logo} alt="ANewPower" className="navbar-logo-img" />
         </Link>
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
