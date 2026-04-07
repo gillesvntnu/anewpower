@@ -158,7 +158,7 @@ function Thuisbatterijen(): JSX.Element {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} ANewPower. Alle rechten voorbehouden.</p>
+          <p>&copy; {new Date().getFullYear()} ANewPower. Alle rechten voorbehouden. Developer: <a href="https://gillesvandevyver.com" target="_blank" rel="noopener noreferrer">gillesvandevyver.com</a></p>
         </div>
       </footer>
     </>
