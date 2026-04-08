@@ -9,6 +9,8 @@ function Footer(): JSX.Element {
         <div className="footer-col">
           <h4>ANewPower</h4>
           <p>Uw partner voor zonnepanelen, batterijen en laadpalen.</p>
+          <br />
+          <p>BTW 0803187912</p>
         </div>
         <div className="footer-col">
           <h4>Diensten</h4>
