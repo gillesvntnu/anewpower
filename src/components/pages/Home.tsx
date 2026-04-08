@@ -197,6 +197,9 @@ function Home(): JSX.Element {
             <h4>Contact</h4>
             <ul>
               <li>
+                <i className="fas fa-map-marker-alt"></i> Kernenergiestraat 19 B16, 2610 Wilrijk
+              </li>
+              <li>
                 <i className="fas fa-envelope"></i> info@anewpower.be
               </li>
               <li>

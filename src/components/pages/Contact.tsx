@@ -52,7 +52,8 @@ function Contact(): JSX.Element {
                 <i className="fas fa-map-marker-alt"></i>
               </div>
               <h3>Adres</h3>
-              <p>België</p>
+              <p>Kernenergiestraat 19 B16</p>
+              <p>2610 Wilrijk</p>
               <p className="contact-detail">Op afspraak</p>
             </div>
           </div>
@@ -88,6 +89,9 @@ function Contact(): JSX.Element {
           <div className="footer-col">
             <h4>Contact</h4>
             <ul>
+              <li>
+                <i className="fas fa-map-marker-alt"></i> Kernenergiestraat 19 B16, 2610 Wilrijk
+              </li>
               <li>
                 <i className="fas fa-envelope"></i> info@anewpower.be
               </li>
